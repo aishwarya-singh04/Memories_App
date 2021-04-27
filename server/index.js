@@ -16,7 +16,8 @@ app.use('/posts', postRoutes);
 
 //connecting app to database(mongoDB)
 // const CONNECTION_URL = 'mongodb+srv://aishwarya-singh04:@Me_aish1@cluster0.xrzt5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-const CONNECTION_URL='mongodb+srv://aishwarya-singh04:@Me_aish1@cluster0.xrzt5.mongodb.net/Memories?retryWrites=true&w=majority';
+const CONNECTION_URL='mongodb+srv://aishwarya-singh04:aishwarya123@cluster0.xrzt5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+
 const PORT = process.env.PORT || 5000;
 
 //we use mongoose to connect to outr database
