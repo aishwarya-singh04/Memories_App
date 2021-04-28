@@ -16,3 +16,6 @@ export const likePost = (id) => axios.patch(`${url}/${id}/likePost`);
 
 
 
+export const fetchPosts = () => API.get('/posts');
+export const signIn = (formData) => API.post('/user/signin', formData);
+export const signUp = (formData) => API.post('/user/signup', formData);
