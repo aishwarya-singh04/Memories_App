@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const secret = 'test';
+// const secret = 'test';
 
 const auth = async (req, res, next) => {
   try {
@@ -10,13 +10,13 @@ const auth = async (req, res, next) => {
     let decodedData;
 
     if (token && isCustomAuth) {      
-      decodedData = jwt.verify(token, secret);
+      decodedData = jwt.verify(token, 'test');
 
-      req.userId = decodedData?.id;
+      req.userId = decodedData.id;
     } else {
       decodedData = jwt.decode(token);
 
-      req.userId = decodedData?.sub; //sub is a googl's name to differentiate different google ids
+      req.userId = decodedData.sub; //sub is a googl's name to differentiate different google ids
     }    
 
     next();
